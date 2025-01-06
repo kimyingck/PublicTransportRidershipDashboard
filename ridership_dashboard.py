@@ -77,16 +77,16 @@ with st.expander("Data Description"):
     st.table(new_df.style.applymap(lambda x: 'background-color: #f2f2f2' if x else ''))
 
     # Display the download button for the CSV file
-    st.write("You can download the latest data from [data.gov.my](https://data.gov.my/) or download it here:")
-    def convert_df(new_edited_df):
-        return new_edited_df.to_csv(index=False).encode('utf-8')
-    csv = convert_df(new_edited_df)
+    def convert_df(df):
+        return df.to_csv(index=False).encode('utf-8')
+    csv = convert_df(df)
+    st.write("You can get the latest data from [data.gov.my](https://data.gov.my/) or you download it here using the button")
     st.download_button(
-        label="Download CSV",
-        data=csv,
-        file_name="ridership.csv",
-        mime="text/csv",
-        key="download-csv"
+        "Press to Download",
+        csv,
+        "ridership_data.csv",
+        "text/csv",
+        key='download-csv'
     )
 
 st.markdown("<br>", unsafe_allow_html=True)
