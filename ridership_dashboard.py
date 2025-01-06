@@ -69,9 +69,6 @@ with st.expander("Data Description"):
         'rail_intercity (Integer)': 'Ridership: KTM Intercity'
     }
 
-    # Read csv 
-    new_edited_df = pd.read_csv("/Users/kimying/Downloads/ridership_headline.csv")
-
     # Create a DataFrame for better UI/UX
     new_df = pd.DataFrame(variable_definitions.items(), columns=['Variable', 'Description'])
 
