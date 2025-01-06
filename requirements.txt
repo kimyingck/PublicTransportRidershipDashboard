@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+matplotlib.pyplot
+plotly.express
+seaborn
+streamlit_extras.add_vertical_space
+plotly.graph_objects
