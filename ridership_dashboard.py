@@ -457,14 +457,28 @@ if selected_lines:
 else:
     st.info("Visualizations will appear here once you select rail or bus lines.")
 
-# Insights section for monthly comparison
 st.markdown("""
     <div style="background-color:#f7f7f7; padding:10px; border-radius:8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
     <h3>Insights:</h3>
     <ul style="list-style-type: none; padding-left: 0;">
-        <li><b>Higher Ridership for Rail Modes (LRT, MRT):</b> Rail transport modes such as LRT and MRT consistently show higher average ridership compared to buses. This suggests a clear preference for rail, likely due to faster travel times, higher frequency, and more direct routes in urban areas.</li>
-        <li><b>Bus Ridership vs Rail:</b> Buses, although vital for covering areas not served by rail, tend to have lower ridership on average. This could be due to longer travel times, less frequency, and less predictable schedules.</li>
-        <li><b>Improving Rail and Bus Integration:</b> Expanding rail infrastructure and improving connections with buses could significantly enhance the commuter experience. Well-integrated transport systems would provide more seamless travel, making it easier for commuters to switch between modes and improving overall efficiency.</li>
+        <li><b>Rail vs. Bus Ridership:</b>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><b>Higher Ridership for Rail Modes (LRT, MRT):</b> Rail modes like LRT and MRT consistently show higher ridership compared to buses, suggesting a preference for rail due to its faster travel times, higher frequency, and direct routes in urban areas.</li>
+                <li><b>Bus Ridership vs Rail:</b> Although buses are crucial for connecting areas not served by rail, they generally show lower ridership. This could be due to longer travel times, lower frequency, and less predictable schedules compared to rail.</li>
+            </ul>
+        </li>
+        <li><b>Monthly Ridership Trends:</b>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><b>December Peak:</b> **December** sees the highest ridership across all transport modes, likely driven by year-end holidays and school vacations, when travel demand is higher.</li>
+                <li><b>April Low:</b> **April** shows the lowest ridership, which may be due to fewer holidays and a lull in travel demand compared to other months.</li>
+            </ul>
+        </li>
+        <li><b>Mode Performance Across Months:</b>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><b>LRT Leading:</b> **LRT** consistently leads in ridership across all months, indicating its high demand in urban areas.</li>
+                <li><b>KTM Intercity Low:</b> **KTM Intercity** consistently records the lowest ridership, reflecting its more regional focus compared to urban-centric modes like LRT and MRT.</li>
+            </ul>
+        </li>
     </ul>
     </div>
 """, unsafe_allow_html=True)
@@ -529,10 +543,25 @@ else:
 st.markdown("""
     <div style="background-color:#f7f7f7; padding:10px; border-radius:8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
     <h3>Insights:</h3>
+    
+    <!-- Trends Over Time -->
+    <h4>Trends Over Time:</h4>
     <ul style="list-style-type: none; padding-left: 0;">
-        <li><b>Drastic Decline from 2019 to 2020:</b> A significant decrease in ridership is observed across all transport modes in 2020, likely due to the COVID-19 pandemic, which led to lockdowns and reduced demand for public transportation.</li>
-        <li><b>Continued Decline from 2020 to 2021:</b> Despite the easing of restrictions, ridership remained low in 2021 as people were still hesitant to travel due to pandemic concerns and limited public transport services.</li>
-        <li><b>Recovery in 2022:</b> A marked increase in ridership in 2022, attributed to the lifting of travel restrictions and the reopening of the country, allowing people to resume commuting and traveling across regions.</li>
+        <li><b>Drastic Decline from 2019 to 2020:</b> A significant decrease in ridership is observed across all transport modes in 2020, primarily due to the COVID-19 pandemic, which led to lockdowns and reduced demand for public transportation.</li>
+        <li><b>Continued Decline from 2020 to 2021:</b> Despite the easing of restrictions, ridership remained subdued in 2021, as people were still hesitant to travel and public transport services were limited.</li>
+        <li><b>Recovery in 2022:</b> Ridership saw a significant rebound in 2022, following the lifting of travel restrictions and the reopening of the country, leading to increased commuting and regional travel.</li>
+        <li><b>Year-on-Year Growth from 2022 to 2024:</b> Ridership continued to grow steadily in 2023 and 2024, driven by the gradual recovery of the economy, improved confidence in public transport, and the continued expansion of rail networks like MRT and LRT.</li>
     </ul>
+
+    <!-- Transport Mode Performance -->
+    <h4>Transport Mode Performance:</h4>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li><b>LRT:</b> Leads in ridership, with approximately **659.17M** passengers.</li>
+        <li><b>MRT:</b> Ranked second, but has the highest bounce rate of **37.5%**.</li>
+        <li><b>KTM Intercity:</b> Records the lowest ridership among the rail services.</li>
+        <li><b>Rapid Bus (Kuantan):</b> Shows the lowest ridership among bus services.</li>
+    </ul>
+    
     </div>
 """, unsafe_allow_html=True)
+
