@@ -278,7 +278,7 @@ st.subheader('Select Rail or Bus Lines to Analyze:')
 selected_df = df.drop(columns=['month', 'year','sum_ridership','day_of_week'])
 
 # Create a checkbox to enable select all options
-select_all = st.checkbox("Select All Lines", value=False)
+select_all = st.checkbox("Select All Lines", value=True)
 multiselect_options = selected_df.columns[1:]
 
 # If "Select All" is checked, select all available lines in the multiselect
