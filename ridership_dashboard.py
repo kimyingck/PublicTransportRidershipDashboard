@@ -339,6 +339,8 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
+st.markdown("<br>", unsafe_allow_html=True)
+
  # Visualization 2: Weekday vs Weekend Ridership
 st.title('Weekday vs Weekend Ridership')
 if selected_lines:
@@ -383,8 +385,6 @@ st.markdown("""
     </ul>
     </div>
 """, unsafe_allow_html=True)
-
-
 
 # Visualisation 3: Monthly Comparison of Average Ridership Across Transport Modes
 st.title("Monthly Comparison of Average Ridership Across Transport Modes")
@@ -469,19 +469,20 @@ st.markdown("""
         </li>
         <li><b>Monthly Ridership Trends:</b>
             <ul style="list-style-type: none; padding-left: 0;">
-                <li><b>December Peak:</b> **December** sees the highest ridership across all transport modes, likely driven by year-end holidays and school vacations, when travel demand is higher.</li>
-                <li><b>April Low:</b> **April** shows the lowest ridership, which may be due to fewer holidays and a lull in travel demand compared to other months.</li>
+                <li><b>December Peak:</b> December sees the highest ridership across all transport modes, likely driven by year-end holidays and school vacations, when travel demand is higher.</li>
+                <li><b>April Low:</b> April shows the lowest ridership, which may be due to fewer holidays and a lull in travel demand compared to other months.</li>
             </ul>
         </li>
         <li><b>Mode Performance Across Months:</b>
             <ul style="list-style-type: none; padding-left: 0;">
-                <li><b>LRT Leading:</b> **LRT** consistently leads in ridership across all months, indicating its high demand in urban areas.</li>
-                <li><b>KTM Intercity Low:</b> **KTM Intercity** consistently records the lowest ridership, reflecting its more regional focus compared to urban-centric modes like LRT and MRT.</li>
+                <li><b>LRT Leading:</b> LRT consistently leads in ridership across all months, indicating its high demand in urban areas.</li>
+                <li><b>KTM Intercity Low:</b> KTM Intercity consistently records the lowest ridership, reflecting its more regional focus compared to urban-centric modes like LRT and MRT.</li>
             </ul>
         </li>
     </ul>
     </div>
 """, unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)     
 
 # Visualisation 4: Yearly Comparison of Average Ridership Across Transport Modes
 st.title("Yearly Comparison of Average Ridership Across Transport Modes")
@@ -556,8 +557,8 @@ st.markdown("""
     <!-- Transport Mode Performance -->
     <h4>Transport Mode Performance:</h4>
     <ul style="list-style-type: none; padding-left: 0;">
-        <li><b>LRT:</b> Leads in ridership, with approximately **659.17M** passengers.</li>
-        <li><b>MRT:</b> Ranked second, but has the highest bounce rate of **37.5%**.</li>
+        <li><b>LRT:</b> Leads in ridership, with approximately 659.17M passengers.</li>
+        <li><b>MRT:</b> Ranked second, but has the highest bounce rate of 37.5%.</li>
         <li><b>KTM Intercity:</b> Records the lowest ridership among the rail services.</li>
         <li><b>Rapid Bus (Kuantan):</b> Shows the lowest ridership among bus services.</li>
     </ul>
